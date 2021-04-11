@@ -1,20 +1,20 @@
-# BinaryExtractor
+# BinaryCFGExtractor
 
-**BinaryExtractor is an automated tool for extracting binary code control flow graph (CFG).**
+**BinaryCFGExtractor is an automated tool for extracting binary code control flow graph (CFG).**
 
-BinaryExtractor, which is able to extract binary code control flow graph, provides an easy way to analyze smart contracts bytecode to understand deeper their internal behaviours,
+BinaryCFGExtractor, which is able to extract binary code control flow graph, provides an easy way to analyze smart contracts bytecode to understand deeper their internal behaviours,
 
 
 
 ## Features
 
-- **Disassembler**: BinaryExtractor can translate bytecode into binary code control flow graph, consists of blocks and control flow edges. 
+- **Disassembler**: BinaryCFGExtractor can translate bytecode into binary code control flow graph, consists of blocks and control flow edges. 
 
 
 
 ## Requirements
 
-BinaryExtractor is supported on Linux (ideally Ubuntu 16.04) and requires Python >=3.5 (ideally 3.6).
+BinaryCFGExtractor is supported on Linux (ideally Ubuntu 16.04) and requires Python >=3.5 (ideally 3.6).
 
 Dependencies:
 * Graph generation: [graphviz](https://graphviz.gitlab.io/download/)
@@ -26,7 +26,7 @@ Dependencies:
 
 ## Architecture
 ```shell
-${BinaryExtractor}
+${BinaryCFGExtractor}
 ├── binary_cfg_code
 │   ├── integeroverflow
 │   ├── reentrancy
@@ -38,7 +38,7 @@ ${BinaryExtractor}
     └── timestamp
 ```
 
-* `binary_cfg_code`: the binary code control flow graph consisting of blocks and edges that are extracted by the BinaryExtractor.
+* `binary_cfg_code`: the binary code control flow graph consisting of blocks and edges that are extracted by the BinaryCFGExtractor.
 * `binary_extractor`: the core code of the binary code control flow graph extractor.
 * `bytecode`: the code complied from the source code of smart contract.
 
@@ -52,14 +52,14 @@ ${BinaryExtractor}
 sudo apt-get update && sudo apt-get install python-pip graphviz xdg-utils -y
 ```
 
-- Install BinaryExtractor
+- Install BinaryCFGExtractor
 ```
-# Download BinaryExtractor
-git clone https://github.com/Messi-Q/BinaryExtractor
+# Download BinaryCFGExtractor
+git clone https://github.com/Messi-Q/BinaryCFGExtractor
 ```
 
-- Run BinaryExtractor
+- Run BinaryCFGExtractor
 ```
-cd BinaryExtractor
+cd BinaryCFGExtractor
 python3 evm_cfg.extractore.py
 ```
