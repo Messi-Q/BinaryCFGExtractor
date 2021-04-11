@@ -38,9 +38,9 @@ ${BinaryExtractor}
     └── timestamp
 ```
 
-* `binary_cfg_code`: the 
-* `binary_extractor`: 
-* `bytecode`: 
+* `binary_cfg_code`: the binary code control flow graph consisting of blocks and edges that are extracted by the BinaryExtractor.
+* `binary_extractor`: the core code of the binary code control flow graph extractor.
+* `bytecode`: the code complied from the source code of smart contract.
 
 
 
@@ -52,14 +52,13 @@ ${BinaryExtractor}
 sudo apt-get update && sudo apt-get install python-pip graphviz xdg-utils -y
 ```
 
-- Install BinaryExtractor:
+- Install BinaryExtractor
 ```
 # Download BinaryExtractor
 git clone https://github.com/Messi-Q/BinaryExtractor
-cd BinaryExtractor
 ```
 
-- Run
+- Run BinaryExtractor
 ```
 cd BinaryExtractor
 python3 evm_cfg.extractore.py
