@@ -38,7 +38,7 @@ ${BinaryExtractor}
     └── timestamp
 ```
 
-* `binary_cfg_code`: 
+* `binary_cfg_code`: the 
 * `binary_extractor`: 
 * `bytecode`: 
 
