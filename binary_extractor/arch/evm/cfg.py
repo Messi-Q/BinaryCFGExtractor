@@ -2,6 +2,7 @@ from binary_extractor.analysis.cfg import CFG
 from binary_extractor.analysis.graph import CFGGraph
 from binary_extractor.core.function import Function
 from binary_extractor.core.basicblock import BasicBlock
+
 from binary_extractor.arch.evm.disassembler import EvmDisassembler
 
 import json

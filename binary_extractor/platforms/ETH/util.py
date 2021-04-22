@@ -1,4 +1,4 @@
-from binary_cfg_extractor.platforms.ETH.constants import BLOCK_TAGS
+from binary_extractor.platforms.ETH.constants import BLOCK_TAGS
 
 
 def hex_to_dec(x):

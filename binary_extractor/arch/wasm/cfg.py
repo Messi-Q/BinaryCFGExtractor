@@ -9,14 +9,14 @@ from binary_extractor.analysis.graph import CFGGraph
 from binary_extractor.arch.wasm.analyzer import WasmModuleAnalyzer
 from binary_extractor.arch.wasm.disassembler import WasmDisassembler
 from binary_extractor.arch.wasm.format import (format_bb_name,
-                                                   format_func_name)
+                                               format_func_name)
 from binary_extractor.arch.wasm.wasm import _groups
 
 from binary_extractor.core.basicblock import BasicBlock
 from binary_extractor.core.edge import (Edge,
-                                            EDGE_UNCONDITIONAL,
-                                            EDGE_CONDITIONAL_TRUE, EDGE_CONDITIONAL_FALSE,
-                                            EDGE_FALLTHROUGH, EDGE_CALL)
+                                        EDGE_UNCONDITIONAL,
+                                        EDGE_CONDITIONAL_TRUE, EDGE_CONDITIONAL_FALSE,
+                                        EDGE_FALLTHROUGH, EDGE_CALL)
 from binary_extractor.core.function import Function
 from binary_extractor.core.utils import bytecode_to_bytes
 
@@ -35,7 +35,7 @@ DESIGN_EXPORT = {'fillcolor': 'grey',
 
 def enum_func(module_bytecode):
     ''' return a list of Function
-        see:: binary2assembly.core.function
+        see:: binary_extractor.core.function
     '''
     functions = list()
     analyzer = WasmModuleAnalyzer(module_bytecode)

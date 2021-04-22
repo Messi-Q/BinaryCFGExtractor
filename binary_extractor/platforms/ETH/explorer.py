@@ -1,7 +1,11 @@
 import warnings
 
+#from ethereum import utils
+#from ethereum.abi import encode_abi, decode_abi
+
 from binary_extractor.platforms.ETH.constants import DEFAULT_GAS_PER_TX, DEFAULT_GAS_PRICE, BLOCK_TAGS, BLOCK_TAG_LATEST
 from binary_extractor.platforms.ETH.util import hex_to_dec, clean_hex, validate_block
+
 from binary_extractor.engine.explorer import Explorer
 """
 This code is adapted from: ethjsonrpc

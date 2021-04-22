@@ -5,7 +5,7 @@ from binary_extractor.core.utils import bytecode_to_bytes
 from binary_extractor.arch.wasm.instruction import WasmInstruction
 from binary_extractor.arch.wasm.wasm import Wasm
 
-# from binary2assembly.arch.wasm.decode import decode_module
+# from binary_extractor.arch.wasm.decode import decode_module
 from wasm.decode import decode_module
 from wasm.modtypes import CodeSection
 from wasm.compat import byte2int
@@ -73,16 +73,16 @@ class WasmDisassembler(Disassembler):
         >>> 'block -1\ni32.const 24\ncall 28\ni32.const 0\nreturn\nend'
         >>>
         >>> disasm.disassemble(r_format='text')
-        >>> [<binary2assembly.arch.wasm.instruction.WasmInstruction at 0x7f80243120b8>,
+        >>> [<binary_extractor.arch.wasm.instruction.WasmInstruction at 0x7f80243120b8>,
              ...
-             <binary2assembly.arch.wasm.instruction.WasmInstruction at 0x7f8024312588>,
-             <binary2assembly.arch.wasm.instruction.WasmInstruction at 0x7f80243121d0>]
+             <binary_extractor.arch.wasm.instruction.WasmInstruction at 0x7f8024312588>,
+             <binary_extractor.arch.wasm.instruction.WasmInstruction at 0x7f80243121d0>]
         >>>
         >>> disasm.disassemble(r_format='reverse')
-        >>> {0: <binary2assembly.arch.wasm.instruction.WasmInstruction at 0x7f8024319d68>,
+        >>> {0: <binary_extractor.arch.wasm.instruction.WasmInstruction at 0x7f8024319d68>,
              ...
-             4: <binary2assembly.arch.wasm.instruction.WasmInstruction at 0x7f802431fa58>,
-             5: <binary2assembly.arch.wasm.instruction.WasmInstruction at 0x7f802431fc18>}
+             4: <binary_extractor.arch.wasm.instruction.WasmInstruction at 0x7f802431fa58>,
+             5: <binary_extractor.arch.wasm.instruction.WasmInstruction at 0x7f802431fc18>}
         """
 
         return super().disassemble(bytecode, offset, r_format)

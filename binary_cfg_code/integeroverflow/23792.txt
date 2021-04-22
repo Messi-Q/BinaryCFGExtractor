@@ -11,12 +11,12 @@ digraph "graph.cfg.gv" {
 		block_6e [label="6e: JUMPDEST \l6f: DUP1 \l70: PUSH1 0x0\l72: DUP1 \l73: CALLER \l74: PUSH20 0xffffffffffffffffffffffffffffffffffffffff\l89: AND \l8a: PUSH20 0xffffffffffffffffffffffffffffffffffffffff\l9f: AND \la0: DUP2 \la1: MSTORE \la2: PUSH1 0x20\la4: ADD \la5: SWAP1 \la6: DUP2 \la7: MSTORE \la8: PUSH1 0x20\laa: ADD \lab: PUSH1 0x0\lad: SHA3 \lae: PUSH1 0x0\lb0: DUP3 \lb1: DUP3 \lb2: SLOAD \lb3: SUB \lb4: SWAP3 \lb5: POP \lb6: POP \lb7: DUP2 \lb8: SWAP1 \lb9: SSTORE \lba: POP \lbb: POP \lbc: JUMP \l"]
 		block_bd [label="bd: STOP \l"]
 	}
+	block_4f -> block_6e [color=blue]
+	block_44 -> block_4f [color=green]
 	block_6e -> block_6c [color=blue]
 	block_0 -> block_c [color=red]
-	block_c -> block_44 [color=green]
-	block_4f -> block_6e [color=blue]
-	block_0 -> block_3f [color=green]
 	block_44 -> block_4b [color=red]
-	block_44 -> block_4f [color=green]
 	block_c -> block_3f [color=red]
+	block_0 -> block_3f [color=green]
+	block_c -> block_44 [color=green]
 }

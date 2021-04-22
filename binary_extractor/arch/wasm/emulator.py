@@ -4,7 +4,7 @@ from binary_extractor.arch.wasm.vmstate import WasmVMstate
 from binary_extractor.core.ssa import SSA, SSA_TYPE_FUNCTION, SSA_TYPE_CONSTANT
 
 from binary_extractor.arch.wasm.format import (format_func_name,
-                                                   format_bb_name)
+                                               format_bb_name)
 
 import copy
 

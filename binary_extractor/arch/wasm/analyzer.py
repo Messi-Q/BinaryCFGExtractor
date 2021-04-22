@@ -16,9 +16,9 @@ from wasm.modtypes import (TypeSection,
 
 from binary_extractor.arch.wasm.constant import LANG_TYPE, KIND_TYPE
 from binary_extractor.arch.wasm.format import (format_kind_function,
-                                                   format_kind_table,
-                                                   format_kind_memory,
-                                                   format_kind_global)
+                                               format_kind_table,
+                                               format_kind_memory,
+                                               format_kind_global)
 
 from wasm.decode import decode_module
 from binary_extractor.core.utils import bytecode_to_bytes

@@ -43,7 +43,7 @@ class Graph(object):
     def view_simplify(self, call=False, view=True):
         self.view(view=view, call=call, simplify=True)
 
-    def view(self, view=True, simplify=False, call=False, ssa=False):
+    def view(self, view=True, simplify=False, call=False, ssa=False):#####
         g = Digraph(self.filename, filename=self.filename)
 
         with g.subgraph(name='global', node_attr=self.design) as c:
@@ -69,8 +69,8 @@ class Graph(object):
         # insert edges on the graph
         insert_edges_to_graph(g, self.edges, call)
 
-        # g.render(self.filename, view=view)
-        # g.view()
+        g.render(self.filename, view=view)
+        g.view()
 
 
 class CallGraph(object):
@@ -171,4 +171,4 @@ class CFGGraph(Graph):
         insert_edges_to_graph(g, edges, call)
 
         g.render(self.filename, view=view)
-        # g.view()
+        g.view()

@@ -9,10 +9,10 @@ digraph "graph.cfg.gv" {
 		block_c0 [label="c0: JUMPDEST \lc1: PUSH1 0x0\lc3: DUP6 \lc4: PUSH20 0xffffffffffffffffffffffffffffffffffffffff\ld9: AND \lda: DUP6 \ldb: DUP6 \ldc: SWAP1 \ldd: DUP6 \lde: DUP6 \ldf: PUSH1 0x40\le1: MLOAD \le2: DUP1 \le3: DUP4 \le4: DUP4 \le5: DUP1 \le6: DUP3 \le7: DUP5 \le8: CALLDATACOPY \le9: DUP3 \lea: ADD \leb: SWAP2 \lec: POP \led: POP \lee: SWAP3 \lef: POP \lf0: POP \lf1: POP \lf2: PUSH1 0x0\lf4: PUSH1 0x40\lf6: MLOAD \lf7: DUP1 \lf8: DUP4 \lf9: SUB \lfa: DUP2 \lfb: DUP6 \lfc: DUP9 \lfd: DUP9 \lfe: CALL \lff: SWAP4 \l100: POP \l101: POP \l102: POP \l103: POP \l104: SWAP1 \l105: POP \l106: SWAP6 \l107: SWAP5 \l108: POP \l109: POP \l10a: POP \l10b: POP \l10c: POP \l10d: JUMP \l"]
 		block_10e [label="10e: STOP \l"]
 	}
-	block_0 -> block_41 [color=green]
-	block_d -> block_41 [color=red]
 	block_d -> block_46 [color=green]
-	block_46 -> block_c0 [color=blue]
 	block_c0 -> block_a6 [color=blue]
+	block_d -> block_41 [color=red]
+	block_46 -> block_c0 [color=blue]
 	block_0 -> block_d [color=red]
+	block_0 -> block_41 [color=green]
 }

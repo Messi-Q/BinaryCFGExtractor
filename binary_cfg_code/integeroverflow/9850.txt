@@ -11,12 +11,12 @@ digraph "graph.cfg.gv" {
 		block_8c [label="8c: JUMPDEST \l8d: PUSH1 0x0\l8f: DUP1 \l90: PUSH1 0x0\l92: DUP5 \l93: TIMESTAMP \l94: ADD \l95: SWAP2 \l96: POP \l97: DUP4 \l98: DUP3 \l99: ADD \l9a: SWAP1 \l9b: POP \l9c: DUP1 \l9d: SWAP3 \l9e: POP \l9f: POP \la0: POP \la1: SWAP3 \la2: SWAP2 \la3: POP \la4: POP \la5: JUMP \l"]
 		block_a6 [label="a6: STOP \l"]
 	}
-	block_8c -> block_76 [color=blue]
-	block_0 -> block_c [color=red]
-	block_4f -> block_8c [color=blue]
-	block_c -> block_44 [color=green]
-	block_0 -> block_3f [color=green]
-	block_44 -> block_4b [color=red]
 	block_44 -> block_4f [color=green]
+	block_0 -> block_c [color=red]
+	block_44 -> block_4b [color=red]
 	block_c -> block_3f [color=red]
+	block_8c -> block_76 [color=blue]
+	block_0 -> block_3f [color=green]
+	block_c -> block_44 [color=green]
+	block_4f -> block_8c [color=blue]
 }

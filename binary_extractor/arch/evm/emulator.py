@@ -4,7 +4,7 @@ from binary_extractor.core.ssa import SSA, SSA_TYPE_FUNCTION, SSA_TYPE_CONSTANT
 
 from binary_extractor.arch.evm.vmstate import EvmVMstate
 from binary_extractor.arch.evm.cfg import (enum_func_static,
-                                               enum_blocks_static)
+                                           enum_blocks_static)
 
 from binary_extractor.arch.evm.disassembler import EvmDisassembler
 from binary_extractor.arch.evm.ssa import EvmSSASimplifier

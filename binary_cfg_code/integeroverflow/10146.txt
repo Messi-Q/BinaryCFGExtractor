@@ -11,12 +11,12 @@ digraph "graph.cfg.gv" {
 		block_6c [label="6c: JUMPDEST \l6d: PUSH1 0x0\l6f: SLOAD \l70: DUP2 \l71: JUMP \l"]
 		block_72 [label="72: STOP \l"]
 	}
-	block_0 -> block_c [color=red]
-	block_c -> block_44 [color=green]
-	block_6c -> block_56 [color=blue]
-	block_4f -> block_6c [color=blue]
-	block_0 -> block_3f [color=green]
-	block_44 -> block_4b [color=red]
 	block_44 -> block_4f [color=green]
+	block_4f -> block_6c [color=blue]
+	block_0 -> block_c [color=red]
+	block_44 -> block_4b [color=red]
 	block_c -> block_3f [color=red]
+	block_6c -> block_56 [color=blue]
+	block_0 -> block_3f [color=green]
+	block_c -> block_44 [color=green]
 }

@@ -5,7 +5,7 @@ import unittest
 
 class EthereumExplorerTestCase(unittest.TestCase):
 
-    # please only used this key for binary2assembly - Infura registration is FREE
+    # please only used this key for binary_extractor - Infura registration is FREE
     explorer = EthereumInfuraExplorer("bHuaQhX91nkQBac8Wtgj")
 
     '''TODO'''

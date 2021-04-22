@@ -11,12 +11,12 @@ digraph "graph.cfg.gv" {
 		block_9c [label="9c: JUMPDEST \l9d: DUP1 \l9e: PUSH20 0xffffffffffffffffffffffffffffffffffffffff\lb3: AND \lb4: DUP3 \lb5: DUP5 \lb6: PUSH1 0x40\lb8: MLOAD \lb9: DUP1 \lba: DUP3 \lbb: PUSH1 0x0\lbd: NOT \lbe: AND \lbf: PUSH1 0x0\lc1: NOT \lc2: AND \lc3: DUP2 \lc4: MSTORE \lc5: PUSH1 0x20\lc7: ADD \lc8: SWAP2 \lc9: POP \lca: POP \lcb: PUSH1 0x0\lcd: PUSH1 0x40\lcf: MLOAD \ld0: DUP1 \ld1: DUP4 \ld2: SUB \ld3: DUP2 \ld4: DUP6 \ld5: DUP8 \ld6: GAS \ld7: CALL \ld8: SWAP3 \ld9: POP \lda: POP \ldb: POP \ldc: POP \ldd: POP \lde: POP \ldf: POP \le0: JUMP \l"]
 		block_e1 [label="e1: STOP \l"]
 	}
+	block_44 -> block_4f [color=green]
 	block_0 -> block_c [color=red]
 	block_9c -> block_9a [color=blue]
-	block_c -> block_44 [color=green]
-	block_0 -> block_3f [color=green]
 	block_44 -> block_4b [color=red]
-	block_44 -> block_4f [color=green]
-	block_4f -> block_9c [color=blue]
 	block_c -> block_3f [color=red]
+	block_4f -> block_9c [color=blue]
+	block_0 -> block_3f [color=green]
+	block_c -> block_44 [color=green]
 }

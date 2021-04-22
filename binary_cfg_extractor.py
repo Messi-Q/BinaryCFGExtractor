@@ -27,14 +27,14 @@ def main():
         graph = CFGGraph(cfg)
         graph.view()
 
-        print(file_name + "is done!")
+        print(file_name + " is done!")
 
         os.chdir(currentpath)
         cfgList = os.listdir("./binary_cfg_code/integeroverflow/")
         cfgList.sort(key=lambda x: int(x[:-4]))
 
         if (str(file_name)[0:-4] + '.' + 'txt') not in cfgList:
-            copyfile('./bytecode/integeroverflow/graph.cfg.gv',
+            copyfile('./graph.cfg.gv',
                      './binary_cfg_code/integeroverflow/' + str(file_name)[0:-4] + '.' + 'txt')
             os.chdir("./binary_cfg_code/integeroverflow/")
             print(str(file_name)[0:-4])
