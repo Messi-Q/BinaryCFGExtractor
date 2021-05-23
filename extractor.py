@@ -1,10 +1,9 @@
 import os
-import sys
 import re
 
 
-# 获取block所在行内容
-def secondPhase(n):
+# obtain the specific line of the block
+def firstPhase(n):
     inputFileDir = "./binary_cfg_code/delegatecall/"
     dirs = os.listdir(inputFileDir)
     # dirs.sort(key=lambda x: int(x[:-4]))
@@ -30,8 +29,8 @@ def secondPhase(n):
                 continue
 
 
-# 再次提取，将\l删除
-def thirdPhase(n):
+# remove the symbols of '\l'
+def secondPhase(n):
     inputFileDir = "./binary_graph_data/node/"
     dirs = os.listdir(inputFileDir)
     dirs.sort(key=lambda x: int(x[:-4]))
@@ -47,8 +46,8 @@ def thirdPhase(n):
             f_node.write(tt)
 
 
-# 保留地址，不保留block
-def reserve_3(n):
+# reserve '0x' and remove 'block'
+def thirdPhase(n):
     inputFileDir = "./binary_graph_data/new_node/"
     dirs = os.listdir(inputFileDir)
     dirs.sort(key=lambda x: int(x[:-4]))
@@ -76,7 +75,7 @@ def reserve_3(n):
 
 
 # extract the pure bytecode
-def bytecode(n):
+def extractPureBytecode(n):
     inputFileDir = "./bytecode/delegatecall/"
     dirs = os.listdir(inputFileDir)
     print(dirs)
@@ -101,7 +100,7 @@ def bytecode(n):
 
 if __name__ == "__main__":
     n = 0
+    firstPhase(n)
     # secondPhase(n)
     # thirdPhase(n)
-    reserve_3(n)
-    # bytecode(n)
+    # extractPureBytecode(n)
